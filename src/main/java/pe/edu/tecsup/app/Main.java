@@ -1,6 +1,8 @@
 package pe.edu.tecsup.app;
 
 
+import java.util.IllegalFormatWidthException;
+
 public class Main {
     /*
     public static void main(String[] args) {
@@ -14,6 +16,9 @@ public class Main {
     }
     */
     public static int obtenerSuma(int n) {
+        if (n < 0){
+            throw new IllegalArgumentException("El numero debe ser no negativo");
+        }
         int suma = 0;
         for (int i = 1; i <= n; i++) {
             suma += i;
