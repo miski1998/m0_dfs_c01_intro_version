@@ -19,7 +19,9 @@ public class Main {
         if (n < 0){
             throw new IllegalArgumentException("El numero debe ser no negativo");
         }
-        int suma = 0; //cambio desde  el rep. clonado
+
+        int suma = 0; //los cambios son los mismos
+
         for (int i = 1; i <= n; i++) {
             suma += i;
         }
